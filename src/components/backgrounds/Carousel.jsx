@@ -4,7 +4,7 @@ import {Query} from '../Query';
 import Slider from 'react-slick';
 
 
-export default class Carousel extends Component {
+class Carousel extends Component {
     render() {
         const settings = {
           dots: true,
@@ -17,7 +17,7 @@ export default class Carousel extends Component {
         };
         const imageUrl =
     process.env.NODE_ENV !== "development"
-      ? article.image.url
+      ? background.image.url
       : process.env.REACT_APP_BACKEND_URL + background.image.url;
         return (
             <div>
@@ -44,3 +44,4 @@ export default class Carousel extends Component {
         )
     }
 }
+export default Carousel;
