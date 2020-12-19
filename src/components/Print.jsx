@@ -3,7 +3,7 @@ import {Carousel} from './backgrounds/Carousel';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 import React, { Component } from 'react'
 
-export default class Print extends Component {
+ class Print extends Component {
     render() {
         return (
             <div>
@@ -19,3 +19,4 @@ export default class Print extends Component {
         )
     }
 }
+export default Print;
